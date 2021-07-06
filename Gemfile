@@ -19,13 +19,8 @@ gem "rbpdf", "~> 1.20.0"
 gem 'addressable'
 gem 'rubyzip', '~> 2.3.0'
 
-# -----------
-#gem 'thread_safe'
-#gem 'builder'
-
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-#gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
+gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 
 # TOTP-based 2-factor authentication
 gem 'rotp'
@@ -91,7 +86,7 @@ group :test do
   gem "rails-dom-testing"
   gem 'mocha', '>= 1.4.0'
   gem 'simplecov', '~> 0.18.5', :require => false
-  # gem "ffi", platforms: [:mingw, :x64_mingw, :mswin]
+  gem "ffi", platforms: [:mingw, :x64_mingw, :mswin]
   # For running system tests
   gem 'puma'
   gem 'capybara', '~> 3.31.0'
